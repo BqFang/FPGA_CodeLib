@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov 26 14:14:59 2023
+# Process ID: 13272
+# Current directory: E:/Qi_FPGA/prj/0.led/VIVADO18_Prj/led
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3784 E:\Qi_FPGA\prj\0.led\VIVADO18_Prj\led\led.xpr
+# Log file: E:/Qi_FPGA/prj/0.led/VIVADO18_Prj/led/vivado.log
+# Journal file: E:/Qi_FPGA/prj/0.led/VIVADO18_Prj/led\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Qi_FPGA/prj/0.led/VIVADO18_Prj/led/led.xpr
+update_compile_order -fileset sources_1
