@@ -1,0 +1,128 @@
+|LED_TOP
+i_clk => i_clk.IN1
+o_led[0] << LED_Drive:LED_Drive_U0.o_led
+o_led[1] << LED_Drive:LED_Drive_U0.o_led
+
+
+|LED_TOP|clk_pll:clk_pll_u0
+inclk0 => sub_wire4[0].IN1
+c0 <= altpll:altpll_component.clk
+locked <= altpll:altpll_component.locked
+
+
+|LED_TOP|clk_pll:clk_pll_u0|altpll:altpll_component
+inclk[0] => clk_pll_altpll:auto_generated.inclk[0]
+inclk[1] => clk_pll_altpll:auto_generated.inclk[1]
+fbin => ~NO_FANOUT~
+pllena => ~NO_FANOUT~
+clkswitch => ~NO_FANOUT~
+areset => ~NO_FANOUT~
+pfdena => ~NO_FANOUT~
+clkena[0] => ~NO_FANOUT~
+clkena[1] => ~NO_FANOUT~
+clkena[2] => ~NO_FANOUT~
+clkena[3] => ~NO_FANOUT~
+clkena[4] => ~NO_FANOUT~
+clkena[5] => ~NO_FANOUT~
+extclkena[0] => ~NO_FANOUT~
+extclkena[1] => ~NO_FANOUT~
+extclkena[2] => ~NO_FANOUT~
+extclkena[3] => ~NO_FANOUT~
+scanclk => ~NO_FANOUT~
+scanclkena => ~NO_FANOUT~
+scanaclr => ~NO_FANOUT~
+scanread => ~NO_FANOUT~
+scanwrite => ~NO_FANOUT~
+scandata => ~NO_FANOUT~
+phasecounterselect[0] => ~NO_FANOUT~
+phasecounterselect[1] => ~NO_FANOUT~
+phasecounterselect[2] => ~NO_FANOUT~
+phasecounterselect[3] => ~NO_FANOUT~
+phaseupdown => ~NO_FANOUT~
+phasestep => ~NO_FANOUT~
+configupdate => ~NO_FANOUT~
+fbmimicbidir <> <GND>
+clk[0] <= clk[0].DB_MAX_OUTPUT_PORT_TYPE
+clk[1] <= clk[1].DB_MAX_OUTPUT_PORT_TYPE
+clk[2] <= clk[2].DB_MAX_OUTPUT_PORT_TYPE
+clk[3] <= clk[3].DB_MAX_OUTPUT_PORT_TYPE
+clk[4] <= clk[4].DB_MAX_OUTPUT_PORT_TYPE
+extclk[0] <= <GND>
+extclk[1] <= <GND>
+extclk[2] <= <GND>
+extclk[3] <= <GND>
+clkbad[0] <= <GND>
+clkbad[1] <= <GND>
+enable1 <= <GND>
+enable0 <= <GND>
+activeclock <= <GND>
+clkloss <= <GND>
+locked <= clk_pll_altpll:auto_generated.locked
+scandataout <= <GND>
+scandone <= <GND>
+sclkout0 <= <GND>
+sclkout1 <= <GND>
+phasedone <= <GND>
+vcooverrange <= <GND>
+vcounderrange <= <GND>
+fbout <= <GND>
+fref <= <GND>
+icdrclk <= <GND>
+
+
+|LED_TOP|clk_pll:clk_pll_u0|altpll:altpll_component|clk_pll_altpll:auto_generated
+clk[0] <= pll1.CLK
+clk[1] <= pll1.CLK1
+clk[2] <= pll1.CLK2
+clk[3] <= pll1.CLK3
+clk[4] <= pll1.CLK4
+inclk[0] => pll1.CLK
+inclk[1] => pll1.CLK1
+locked <= pll1.LOCKED
+
+
+|LED_TOP|LED_Drive:LED_Drive_U0
+i_clk => i_clk.IN1
+i_rst => i_rst.IN1
+o_led[0] <= ro_led[0].DB_MAX_OUTPUT_PORT_TYPE
+o_led[1] <= ro_led[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LED_TOP|LED_Drive:LED_Drive_U0|CLK_DIV_module:CLK_DIV_module_U0
+i_clk => ro_clk_div.CLK
+i_clk => r_cnt[0].CLK
+i_clk => r_cnt[1].CLK
+i_clk => r_cnt[2].CLK
+i_clk => r_cnt[3].CLK
+i_clk => r_cnt[4].CLK
+i_clk => r_cnt[5].CLK
+i_clk => r_cnt[6].CLK
+i_clk => r_cnt[7].CLK
+i_clk => r_cnt[8].CLK
+i_clk => r_cnt[9].CLK
+i_clk => r_cnt[10].CLK
+i_clk => r_cnt[11].CLK
+i_clk => r_cnt[12].CLK
+i_clk => r_cnt[13].CLK
+i_clk => r_cnt[14].CLK
+i_clk => r_cnt[15].CLK
+i_rst => ro_clk_div.ACLR
+i_rst => r_cnt[0].ACLR
+i_rst => r_cnt[1].ACLR
+i_rst => r_cnt[2].ACLR
+i_rst => r_cnt[3].ACLR
+i_rst => r_cnt[4].ACLR
+i_rst => r_cnt[5].ACLR
+i_rst => r_cnt[6].ACLR
+i_rst => r_cnt[7].ACLR
+i_rst => r_cnt[8].ACLR
+i_rst => r_cnt[9].ACLR
+i_rst => r_cnt[10].ACLR
+i_rst => r_cnt[11].ACLR
+i_rst => r_cnt[12].ACLR
+i_rst => r_cnt[13].ACLR
+i_rst => r_cnt[14].ACLR
+i_rst => r_cnt[15].ACLR
+o_clk_div <= ro_clk_div.DB_MAX_OUTPUT_PORT_TYPE
+
+
